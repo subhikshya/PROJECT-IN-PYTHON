@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="game">
+        <div id="menu">
+        <div id="menu-heading">Water Sort Puzzle</div>
+        <div class="lev1" id="easy" onclick="openLevel(0)">Easy</div>
+        <div class="lev1" id="medium" onclick="openLevel(1)">Medium</div>
+        <div class="lev1" id="hard" onclick="openLevel(2)">Hard</div>
+        <div class="lev1" id="very hard" onclick="openLevel(3)">Very Hard</div>
+        <div class="lev1" id="impossible" onclick="openLevel(7)">Impossible</div>
+        <br><br><br>
+        <div id="rules-btn" onclick="showRules();">Rules</div>
+    </div>
+    <div id="level"></div>
+    <div id="rules-page">
+        <div id="rules">
+            <div id="rules-heading">
+                Rules
+            </div>
+            <div id="rules-text">
+                Here is the write your game rules.The Water Sort Puzzle is a popular mobile game where players are presented with containers filled with colored liquids and the objective is to sort the liquids into a predetermined arrangement using a limited number of moves. Here are the basic rules of the game:
+                Initial Setup: At the beginning of each level, the player is presented with several containers, each containing a mixture of colored liquids. The number of containers and the colors of liquids vary from level to level.
+                Sorting Objective: The objective of each level is to sort the liquids from the initial mixed state into a final state where each container contains only one color of liquid.
+                Moving Liquids: The player can move the liquids between containers by pouring them. However, there are limitations on how the liquids can be poured.
+                The player can pour liquid from one container to another only if both containers have enough space to accommodate the poured liquid.
+                The player can pour liquid from the top of one container into another container as long as the poured liquid forms a contiguous block of the same color.
+                Limited Moves: Players have a limited number of moves or pours to achieve the sorting objective. The number of moves allowed varies from level to level
+                Constraints: Some levels may include additional constraints or challenges, such as:Limited space in containers, requiring strategic planning to prevent overflow.
+                Limited capacity for certain colors, meaning some containers cannot hold certain colors of liquid.Obstacles or barriers that restrict the flow of liquids between containers.Completing Levels: The player successfully completes a level when all containers are filled with only one color of liquid, and the sorting is achieved within the allowed number of moves.
+                Scoring: Players may earn points or stars based on how efficiently they complete a level, such as completing it in fewer moves or within a shorter time limit.Progression: As players complete levels, they unlock new, more challenging levels with different arrangements of containers, colors of liquids, and additional obstacles.
+            </div>
+            <div id="back" onclick="HideRules();">
+                Back
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="style.js"></script>
+</html>
